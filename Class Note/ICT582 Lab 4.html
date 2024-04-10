@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<!-- saved from url=(0090)https://www.it.murdoch.edu.au/~S900432D/krIuUnc93_hhxyePllj154_8xei/topics/t04/index.shtml -->
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title> ICT582 Lab 4</title>
+<link rel="stylesheet" type="text/css" href="./ICT582 Lab 4_files/unit_website.css">
+</head>
+
+<body data-new-gr-c-s-check-loaded="14.1062.0" data-gr-ext-installed="">
+
+<div class="LabSheet">
+
+<!-- to enable SSI, remove the space between two dashes  and # -->
+<!-- #include virtual="../../templates/header.html" -->
+
+<h2>ICT582 Lab 4: <br>
+Functions and Modules</h2>
+<hr>
+
+<h3>Learning Objectives: </h3>
+    <ol>
+    <li> Understand the concepts of abstraction and decomposition 
+         they are used to solve large problems. 
+         </li>
+    <li> Be able to define new functions and use these functions to solve
+         problems.
+         </li>
+    <li> Understand return statement and know what it returns if no value is
+         given in the return statement.
+         </li>
+    <li> Understand Python's parameter passing model and have a clear
+         understanding on the relationship between a formal parameter
+         and its actual parameter (or argument).
+         </li>
+    <li> Understand a scope of a variable - both global variable and local
+         variable.
+         </li>
+    <li> Understand why we need to break down a large code into multiple modules.
+         </li>
+    <li> Be able to create new modules and use the functions and variables. 
+         </li>
+    <li> Gain experience of using abstraction and decomposition as tools to 
+          solving comlex problems by creating new functions and modules.
+         </li>
+    </ol>
+
+<h3>Required Reading: </h3>
+    <ul>
+    <li> Lecture Notes: Topic 4. </li>
+    </ul>
+
+<h3>Reference: </h3>
+    <ul>
+    <li> <a href="https://www.it.murdoch.edu.au/~S900432D/krIuUnc93_hhxyePllj154_8xei/topics/ICT582LabInstructions.shtml">
+            ICT582 Lab Instructions </a>
+         </li>
+    </ul>
+
+<h3>Required Software: </h3>
+    <ul>
+    <li> Python 3 and Idle 3</li>
+    </ul>
+ 
+<h3> Exercises</h3>
+
+<ol>
+<li id="ex01"> <p> 
+       Define a function that takes two formal parameters representing two 
+       numbers and returns the average of the two numbers. In the main program, 
+       reads in two numbers and stores them into two variables <code>a</code> 
+       and <code>b</code> respectively. The program then calls the function
+       to get the average of the two numbers which are passed to the function
+       as two actual parameters. Finally print out the average to the console. 
+       Note: you must appropriately name the function so that it reflects 
+       what the function does. As the function returns the average and is often
+       called to get the average, it is better to name it using a noun. 
+     </p>
+</li>
+<li id="ex02"> <p> 
+       Revise Exercise 2 in Lab 3. This time, you should define a function
+       that  reads a sequence of numbers and find the largest number in the 
+       sequence.
+       Then the main program call the function to read a sequence of numbers
+       and print the largest number to the console.
+     </p> 
+     <p>As the function will find the largest number, how would you pass this
+      largest number from the function to its caller? One approach is to pass 
+      the largest number using a return statement. In this exercise, please 
+      use this approach. Think about how to name the function.
+     </p>
+</li>
+
+<li id="ex03"> <p> 
+       Revise Exercise 2 above. This time, you should pass the largest number
+       from the function to the caller via a global variable. Think about how 
+       to name the function.
+     </p>
+     <p>When testing the program, deliberately provide an invalid input such as
+      <code>23;4</code> and observe how the program would behave. Note you are
+      not required to correct this problem in this lab.
+     </p>
+</li>
+
+<li id="ex04"> <p> 
+     Define a function that takes in a single character as the parameter 
+     (the input character) and returns a new character using the following 
+     algorithm:
+     </p><ul>
+       <li>If the input character is an English letter, return the next letter
+          in the English alphabet, eg, 'a' =&gt; 'b', 'X' =&gt; 'Y. 
+       </li>
+       <li>If the input character is not an english letter, return the 
+          character without change.
+       </li>
+     </ul>
+     <p></p>
+     <p>Hints: you may find the following functions <code>ord</code> and
+        <code>chr</code> and string method <code>isalpha</code> useful.
+     </p>
+</li>
+
+<li id="ex05"> <p> 
+       Revise Exercise 1 in Lab 3. This time, the function takes a string   
+       as its formal parameter and returns the number of digits inside the 
+       string.  In the main program, read a string from the user and print 
+       out the number of digits to the console. Repeat this process until 
+       the user enters "stop". How would you name the function? 
+     </p>
+     <p>Hint: you may want to use string method <code>isdigit</code> 
+       in this question.
+     </p>
+</li>
+
+<li id="ex06"> <p> 
+       Revise Exercise 5 above. This time, the function takes a string as  
+       as its formal parameter and extracts the digits in the string and
+       returns the number represented by the digits. For example, if the 
+       string is "abc12de8fg23XYz", the function would return value 12823.
+       If the string contains no digit, return 0.
+       </p>
+       <p>
+       In the main program, read a string from the user and print 
+       out the required number to the console. Repeat this process until 
+       the user enters "stop". 
+     </p>
+</li>
+
+<li id="ex07"> <p> 
+       Revise the above exercise. This time, define a function that will take 
+       a string as its formal parameter and return a new string. The new string 
+       is generated by shifting the letters in the old string by one position 
+       in alphabetical order, eg, "abc" =&gt; "bcd", 
+        "Python is fun!" =&gt; "Qzuipo jt gvo!".
+        You may use the function you defined in Exercise 4 above in this 
+        question.
+       </p>
+       <p>
+       In the main program, read a string from the user and print out the 
+       shifted string to the console. Repeat this process until the user
+       enters "stop".  
+     </p>
+</li>
+
+<li id="ex08"> <p> 
+       Revise Exercise 4 in Lab 3. This time, define a function that takes
+       an integer number <code>n</code> as its formal parameter and prints 
+       out a triangle with <code>n</code> rows. 
+     </p>
+     <p>Place the function into a Python module named <code>triangle.py</code>.
+      In the main program, call the function to print triangles with
+        3, 5, and 9 rows.
+     </p>
+</li>
+
+<li id="ex09"> <p> 
+      Revise Exercise 5 in Lab 2. This time, define a function that takes
+      a number representing a temperature in Fahreinheit as its formal
+      parameter and returns the temperature value in Celsius.
+    </p>
+    <p>Also define a function to read a daily temperature in Fahreinheit 
+      from the user. As a daily temperature varies between -60 to 130 
+      Fahreinheit, the function must check the input value from the user. 
+      If the input value is outside this range, force the user to enter
+      a new temperature value. This process will continue until a correct
+      value is entered. 
+    </p><p>
+    </p><p>In the main program, repeatedly read a temperature value in 
+       Fahreinheit and then call the function to get its equivalent 
+       in Celsius and print it out to the console. This process ends 
+       when the user enters "end".
+    </p>
+</li>
+</ol>
+
+<h3>The Weekly Lab </h3>
+    <p> Submit the following exercises: </p>
+      <ul>
+      <li>Exercise 2</li>
+      <li>Exercise 7</li>
+      <li>Exercise 8</li>
+      </ul>
+
+ <p>This weekly lab must be submitted to the LMS.
+    Refer to the Unit Information page in the unit LMS for the submission deadline
+    and the week in which this weekly lab is assessed.
+    You must adhere to <a href="https://www.it.murdoch.edu.au/~S900432D/krIuUnc93_hhxyePllj154_8xei/topics/ICT582LabInstructions.shtml">
+    ICT582 Lab Instructions</a> when preparing and submitting your weekly lab.
+</p>
+
+<div class="Signature">
+<br>
+Dr Hong Xie <br>
+Unit Coordinator <br> <br>
+Created: Tuesday, 21 March  2023 <br>
+Created: Monday, 18 March 2024 <br>
+<br>
+
+</div>
+</div>
+
+<hr>
+<div class="Footer">
+    Document author: <a href="mailto:h.xie@murdoch.edu.au">Dr. H. Xie</a>, 
+    Unit Coordinator, ICT582 Python Programming Principles and Practice<br>
+    Last Modified: Monday, 25-Mar-2024 15:38:39 AWST <br>
+    <a href="http://www.murdoch.edu.au/copy/copy.html">Disclaimer &amp; 
+            Copyright Notice</a> © 2024 
+    <a href="http://www.murdoch.edu.au/">Murdoch University</a> <br>
+    This document is relevant for 2024 only
+</div>
+
+
+
+
+
+
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"><template shadowrootmode="open"><style>
+      div.grammarly-desktop-integration {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select:none;
+        user-select:none;
+      }
+
+      div.grammarly-desktop-integration:before {
+        content: attr(data-content);
+      }
+    </style><div aria-label="grammarly-integration" role="group" tabindex="-1" class="grammarly-desktop-integration" data-content="{&quot;mode&quot;:&quot;full&quot;,&quot;isActive&quot;:true,&quot;isUserDisabled&quot;:false}"></div></template></grammarly-desktop-integration></html>

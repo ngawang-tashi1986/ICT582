@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<!-- saved from url=(0090)https://www.it.murdoch.edu.au/~S900432D/krIuUnc93_hhxyePllj154_8xei/topics/t08/index.shtml -->
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title> ICT582 Lab 8</title>
+<link rel="stylesheet" type="text/css" href="./ICT582 Lab 8_files/unit_website.css">
+</head>
+
+<body data-new-gr-c-s-check-loaded="14.1062.0" data-gr-ext-installed="">
+
+<div class="LabSheet">
+
+<!-- to enable SSI, remove the space between two dashes  and # -->
+<!-- #include virtual="../../templates/header.html" -->
+
+<h2>ICT582 Lab 8: <br>
+Testing, Debugging and Exception Handling</h2>
+<hr>
+
+<h3>Learning Objectives: </h3>
+    <ol>
+    <li> Understand the concepts of unit test, regression test 
+         and integration test and be able to use them to test program.</li>
+    <li> Understand and be able to use black box testing and glass box testing 
+         methods to test your programs.</li>
+    <li> Be able to employ different debugging strateges to debug your programs.</li>
+    <li> Understand what an exception is and how to catch and handle it.</li>
+    <li> Know how to raise an exception when encountering an error or an unexpected
+         condition in your programs.</li>
+    <li> Understand and be able to use assertions to safe guarding your programs.</li>
+    <li> Understand the concept of defensive programming and be able to apply it in 
+         programming.</li>
+    </ol>
+
+<h3>Required Reading: </h3>
+    <ul>
+    <li> Lecture Notes: Topic 8. </li>
+    </ul>
+
+<h3>Reference: </h3>
+    <ul>
+    <li> <a href="https://www.python.org/about/gettingstarted/" target="pfb">https://www.python.org/about/gettingstarted/ </a>
+         </li>
+    <li> <a href="https://www.it.murdoch.edu.au/~S900432D/krIuUnc93_hhxyePllj154_8xei/topics/ICT582LabInstructions.shtml">
+            ICT582 Lab Instructions </a>
+         </li>
+    </ul>
+
+<h3>Required Software: </h3>
+    <ul>
+    <li> Python 3 and Idle 3</li>
+    </ul>
+
+<h3> Exercises</h3>
+<ol>
+<li id="ex01"> 
+       <p> Write a function <code>div</code> that takes two numbers as parameters 
+         and returns the quotient of the first number divided by the second number.
+         Use an try-except statement to do the division. In case of  division by 
+         0, use the except clause to return a special float value 'nan' (not a number).
+       </p>
+       <p>Design a number of test cases to test the function (unit test) with the 
+         aim of identifying all possible errors of the function.  For each test, 
+         specify both the input and the expected output. For each test case, carry 
+         out the test and compare the actual test result with the expected result. 
+       </p> </li>
+
+<li id="ex02"> 
+       <p> Revise Exercise 1 in Lab 7: this time, your program must catch <code>
+          FileNotFoundError</code>.
+       </p> </li>
+
+<li id="ex03"> 
+       <p> Revise Exercise 2 in Lab 7: this time, you must catch the following errors:
+           </p><ul>
+              <li>the file <code>foo.txt</code> doesn't exist. </li>
+              <li>the file <code>bar.txt</code> already exists. </li>
+           </ul>
+       <p></p>
+       <p>Note: you should use try-except statement with multiple except clauses
+          to catch and handle each of the errors.
+       </p> </li>
+
+<li id="ex04"> 
+      <p> Revise Exercise 4 in Lab 7: this time, you must check whether each
+        staff  record from the csv file has a staff id. If a staff record from
+        the file doesn't have a staff id. Raise an <code>Exception</code>.
+      </p>
+      <p>In your program, you should catch <code>FileNotFoundError</code> as well
+        as the exception your program raised due to missing staff id. If the staff id
+        is missing from the record, the whole record is ignored.
+      </p></li> 
+
+<li id="ex05"> 
+     <p> Revise Exercise 8 in Lab 4. This time, the function should use an
+         <code>assert</code> statement to ensure that the parameter <code>n</code> 
+         is an integer in the range of 1 and 9 (inclusive). If this parameter 
+        is out of range, the assert statement should raise an exception.
+     </p><p>
+     </p><p>Design a number of test cases to test whether the program meets the 
+        specification. Perform the tests and compare the expected results with
+        the actual results.
+     </p><p></p></li>
+</ol>
+
+<h3>The Weekly Lab </h3>
+    <p> Submit the following exercises: </p>
+      <ul>
+      <li>Exercise 3</li>
+      <li>Exercise 4</li>
+      <li>Exercise 5</li>
+      </ul>
+
+ <p>This weekly lab must be submitted to the LMS.
+    The deadline of submission is given in the Unit Information Page on the LMS.
+    You must adhere to <a href="https://www.it.murdoch.edu.au/~S900432D/krIuUnc93_hhxyePllj154_8xei/topics/ICT582LabInstructions.shtml">
+    ICT582 Lab Instructions</a> when preparing and submitting your weekly lab.
+</p>
+
+<div class="Signature">
+<br>
+Dr Hong Xie <br>
+Unit Coordinator <br> <br>
+Created: Tuesday, 22 March 2022 <br>
+Last update: Monday, 2 October 2023 <br>
+<br>
+
+</div>
+</div>
+
+<hr>
+<div class="Footer">
+    Document author: <a href="mailto:h.xie@murdoch.edu.au">Dr. H. Xie</a>, 
+    Unit Coordinator, ICT582 Python Programming Principles and Practice<br>
+    Last Modified: Monday, 02-Oct-2023 00:21:31 AWST <br>
+    <a href="http://www.murdoch.edu.au/copy/copy.html">Disclaimer &amp; 
+            Copyright Notice</a> © 2024 
+    <a href="http://www.murdoch.edu.au/">Murdoch University</a> <br>
+    This document is relevant for 2024 only
+</div>
+
+
+
+
+
+
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"><template shadowrootmode="open"><style>
+      div.grammarly-desktop-integration {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select:none;
+        user-select:none;
+      }
+
+      div.grammarly-desktop-integration:before {
+        content: attr(data-content);
+      }
+    </style><div aria-label="grammarly-integration" role="group" tabindex="-1" class="grammarly-desktop-integration" data-content="{&quot;mode&quot;:&quot;full&quot;,&quot;isActive&quot;:true,&quot;isUserDisabled&quot;:false}"></div></template></grammarly-desktop-integration></html>

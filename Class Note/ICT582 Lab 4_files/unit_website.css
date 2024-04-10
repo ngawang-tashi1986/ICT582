@@ -1,0 +1,275 @@
+/*
+ * file:	unit_website.css
+ * aim:		CSS Style Sheet for Unit Websites
+ * author:	Hong Xie
+ * date:	24/07/2008
+ * revised:	25/08/2008
+ *		23/08/2009
+ *		05/12/2009
+ *		31/12/2020
+ */
+
+/* Colours */
+
+.BgMurdochRed { background-color: #900229; }
+.BgMurdochGreen { background-color: #006B54; }
+
+/* fonts */
+.Back { font-size: small; }
+.Emphasize { font-style: italic; font-weight: bold; }
+
+/* Website Banner Styles */
+
+body {
+	border: 0px solid red;
+}
+
+div.BannerLeft {  
+    border: 0px solid blue;
+    height: auto;
+    width: auto;
+    float: left;
+}
+
+div.UnitTitle { 
+    border: 0px solid red; 
+    margin-bottom: 10px;
+}
+
+div.UnitTitle a {
+    color: #AA00C5; 
+    font-size: 150%; 
+}
+
+div.TeachingPeriods { 
+    border: 0px solid red; 
+}
+
+div.BannerRight {  
+	border: 0px solid blue;
+	margin: 0px;
+	height: auto;
+	width: auto;
+	float: right;
+}
+
+div.BannerRight img
+{
+	display: inline;
+	margin: 1px;
+	border: 0px solid green; 
+}
+
+/* Footer Style */
+
+div.Footer {
+	margin-left: 6ex;
+	text-align: left;
+	font-size: small;
+}
+
+/* Website Navigation Page */
+
+div.Nav {
+	font-size: large;
+	text-align: left;
+}
+div.Nav a:link { color: yellow; text-decoration: none;  }
+div.Nav a:visited { color: yellow; text-decoration: none; }
+div.Nav a:hover { color: white; text-decoration: underline;  }
+
+/* Info Page Styles */
+
+div.InfoPage{
+	margin-left: 0ex;
+	text-align: left;
+}
+div.InfoPage h2 {
+	margin-left: 0ex;
+	text-align: center;
+}
+div.InfoPage h3 {
+	margin-left: 4ex;
+	text-align: left;
+}
+div.InfoPage h4 {
+	margin-left: 10ex;
+	text-align: left;
+}
+div.InfoPage p {
+	margin-left: 10ex; 
+	text-align: left;
+}
+div.InfoPage ul {
+	margin-left: 7ex; 
+	text-align: left;
+}
+div.InfoPage table  {
+	margin-left: 10ex; 
+	text-align: left;
+}
+div.InfoPage blockquote {
+	margin-left: 10ex; 
+	text-align: left;
+	font-family: Courier, Prestige, monospace;
+}
+
+/* Announcement Page */
+
+div.AnnouncePage {
+	margin-left: 0ex;
+	text-align: left;
+}
+div.AnnouncePage h2 {
+	margin-left: 0ex;
+	text-align: center;
+}
+div.AnnouncePage ul {
+	margin-left: 1ex;
+	text-align: left;
+}
+div.AnnouncePage ul p {
+	margin-left: 0ex;
+	text-align: left;
+}
+
+/* Schedule Page */
+
+div.SchedulePage {
+	margin-left: 0ex;
+	text-align: left;
+}
+div.SchedulePage h2 {
+	margin-left: 0ex;
+	text-align: center;
+}
+div.SchedulePage table {
+	margin-left: 5ex;
+	text-align: left;
+	vertical-align: top;
+}
+div.SchedulePage p {
+	margin-left: 2ex;
+	text-align: left;
+}
+
+/* Links Page */
+
+div.LinksPage {
+	margin-left: 0ex;
+	text-align: left;
+}
+div.LinksPage h2 {
+	margin-left: 0ex;
+	text-align: center;
+}
+div.LinksPage h3 {
+	margin-left: 2ex;
+	text-align: left;
+}
+div.LinksPage ul {
+	margin-left: 2ex;
+	text-align: left;
+}
+div.LinksPage ol {
+	margin-left: 2ex;
+	text-align: left;
+}
+div.LinksPage p {
+	margin-left: 2ex;
+	text-align: left;
+}
+
+/* Lab Sheet Styles */
+div.LabSheet { 
+	margin-left: 5ex;
+	margin-right: 2ex;
+	text-align: left;
+}
+div.LabSheet div.HeadLeft { 
+	margin-left: 0ex;
+	border: 0px solid yellow; 
+	height: auto;
+	width: auto;
+	float: left;
+	text-align: left;
+}
+div.LabSheet div.HeadRight { 
+	margin-right: 0ex;
+	border: 0px solid yellow; 
+	height: auto;
+	width: auto;
+	float: right;
+	text-align: right;
+}
+div.LabSheet div.HeadRight img {
+	display: inline;
+	margin: 0ex;
+	border: 0px solid green; 
+}
+div.LabSheet h2 {    
+	margin-left: 0.5ex;
+	text-align: left;
+}
+div.LabSheet h3 {    
+	margin-left: 0.5ex;
+	text-align: left;
+}
+div.LabSheet h4 {    
+	margin-left: 6.5ex;
+	text-align: left;
+}
+div.LabSheet hr {    
+	margin-left: 0.5ex;
+	text-align: left;
+}
+div.LabSheet ol {    
+	margin-left: 6ex;
+	text-align: left;
+}
+div.LabSheet ul {    
+	margin-left: 6ex;
+	text-align: left;
+}
+div.LabSheet p {    
+	margin-left: 6.5ex;
+	text-align: left;
+}
+div.LabSheet blockquote{    
+	margin-left: 6.5ex;
+}
+div.LabSheet pre {    
+	margin-left: 10.5ex;
+}
+div.LabSheet ol p {    
+	margin-left: 0ex;
+	text-align: left;
+}
+div.LabSheet ol ul {    
+	margin-left: 0ex;
+	list-style-type: square;
+}
+div.LabSheet ol ol {    
+	margin-left: 0ex;
+	list-style-type: lower-alpha;
+}
+div.LabSheet ol pre {    
+	margin-left: 4ex;
+}
+div.LabSheet ol table{    
+	margin-left: 4ex;
+}
+div.LabSheet ul p {    
+	margin-left: 1ex;
+	text-align: left;
+}
+div.LabSheet div.Signature {
+	margin-left: 0ex;
+	text-align: left;
+}
+
+/* 
+
+.navigation {  font-family: Arial, Helvetica, sans-serif; font-size: smaller; color: #993333; font-weight: bolder}
+
+*/

@@ -7,7 +7,7 @@ while True:
     if individual_marks.upper() == "END":
         break
     else:
-        individual_marks = int(individual_marks) # Convert the mark to an integer for comparison
+        individual_marks = int(individual_marks)  # Convert the mark to an integer for comparison
 
     # Increment total marks
     total_marks += 1
@@ -34,10 +34,10 @@ else:
     fail_percentage = 0
 
 # Print the results
-print(f"Total number of marks: {total_marks}")
-print(f"Number of students receiving HD: {grade_hd}")
-print(f"Number of students receiving D: {grade_d}")
-print(f"Number of students receiving C: {grade_c}")
-print(f"Number of students receiving P: {grade_p}")
-print(f"Number of students receiving N: {grade_n}")
+print(f"Total number of marks           : {total_marks}")
+print(f"Number of students receiving HD : {grade_hd}")
+print(f"Number of students receiving D  : {grade_d}")
+print(f"Number of students receiving C  : {grade_c}")
+print(f"Number of students receiving P  : {grade_p}")
+print(f"Number of students receiving N  : {grade_n}")
 print(f"{fail_percentage:.1f}% of students have failed the unit.")

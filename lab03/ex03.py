@@ -1,13 +1,14 @@
+# Python program to read the line and report whether the line contains the word
 while True:
     # Read a line from the user
     input_line = input("Enter a line (or type 'quit' to finish): ")
     
     # Check if the user wants to quit the program
-    if input_line == "quit":
-        print("Exiting the program.")
+    if input_line.lower() == "quit":
+        print("Thank You ! Exiting the program.")
         break
 
-    # Read a word from the user
+    # Read a word from the user to search
     search_word = input("Enter a word to search for: ")
 
     # Use the find method to get the position of the word in the line
