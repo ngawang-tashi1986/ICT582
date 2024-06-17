@@ -1,0 +1,13 @@
+Write a program to read a text file. Display the text file line by line, but proceed each line with a line number.
+
+Write a program that will copy text file "foo.txt" to "bar.txt".
+
+Write a program to read and write an existing text file without truncating it first:
+
+report the initial size of the file;
+then copy the first two lines to the end of the file;
+then print out the first three lines of the file.
+then print out the new size of the file.
+Use Microsoft Excel to create a CSV file staff.csv containing the details of the staff in a company. The informtion must include the staff id, staff name, phone number and home address.
+
+Then write a program to read and print out the name and address of each staff member from the CSV file.
